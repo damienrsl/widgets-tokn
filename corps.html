@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tes widgets iPhone, version 2</title>
+<style>
+/*KIT*/
+main{max-width:640px;margin:0 auto;position:relative;z-index:1;padding:0 16px 60px}
+.hero{padding:60px 4px 26px;position:relative}
+.hero .orbe{--d:70px;position:absolute;right:6px;top:44px;animation:souffle 6s ease-in-out infinite}
+@keyframes souffle{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+.hero h1{font-size:33px;line-height:1.08;letter-spacing:-.03em;max-width:14ch}
+.hero p{margin:16px 0 0;font-size:16px;line-height:1.5;max-width:38ch;color:var(--texte-2)}
+.hero p b,.carte p b,.spec p b,.spec li b,.franc b{color:var(--texte)}
+section{margin:34px 0}
+section>.etiquette{display:block;margin:0 4px 10px}
+.carte{padding:20px;margin-bottom:12px}
+.carte h2{font-size:23px;letter-spacing:-.02em;line-height:1.15}
+.carte>p{margin:10px 0 0;line-height:1.55;color:var(--texte-2)}
+.franc{border-left:2px solid var(--pan-2);padding:14px 16px;margin:14px 0 0;color:var(--texte-2);font-size:14px;line-height:1.5;border-radius:0 var(--r-m) var(--r-m) 0;background:rgba(40,95,255,.06)}
+.spec{padding:14px 0;border-top:1px solid var(--filet)}
+.spec:first-of-type{border-top:0;padding-top:4px}
+.num{font:600 12px var(--police-mono);color:var(--pan-3);letter-spacing:.06em}
+.spec h3{font-size:18px;margin-top:4px;letter-spacing:-.01em}
+.spec p{margin:6px 0 0;font-size:14px;line-height:1.5;color:var(--texte-2)}
+.spec ul{margin:8px 0 0;padding-left:18px;color:var(--texte-2);font-size:14px;line-height:1.55}
+.etat{display:inline-block;margin-left:8px;font:600 11px var(--police-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--pan-3);background:rgba(40,95,255,.1);padding:3px 8px;border-radius:var(--r-pilule);vertical-align:middle}
+.etat.toi{color:var(--texte-2);background:rgba(255,255,255,.7);border:1px solid var(--filet)}
+.boutons{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.bouton{border:1px solid var(--filet);border-radius:var(--r-m);padding:12px 14px;background:rgba(255,255,255,.7)}
+.bouton b{display:block;font:600 12px var(--police-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--pan-3)}
+.bouton span{display:block;font-size:14px;line-height:1.45;color:var(--texte-2);margin-top:4px}
+.heures{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;margin-top:12px;font-size:14px;color:var(--texte-2);line-height:1.5}
+.heures b{font:600 12px var(--police-mono);color:var(--pan-3);letter-spacing:.06em;padding-top:3px}
+.etapes{margin:12px 0 0;padding-left:0;list-style:none;counter-reset:e}
+.etapes li{counter-increment:e;position:relative;padding:0 0 12px 40px;font-size:15px;line-height:1.5;color:var(--texte-2)}
+.etapes li::before{content:counter(e,decimal-leading-zero);position:absolute;left:0;top:2px;font:600 11px var(--police-mono);color:var(--pan-3);border:1px solid var(--pan-2);border-radius:var(--r-pilule);width:28px;height:22px;text-align:center;line-height:21px}
+.etapes li b,.etapes code{color:var(--texte)}
+code{font:500 13px var(--police-mono);background:rgba(40,95,255,.08);padding:1px 6px;border-radius:6px}
+.lien{display:inline-block;margin-top:14px;font:600 15px var(--police);color:#fff;background:linear-gradient(135deg,var(--bleu-chat),var(--bleu-renard));padding:12px 18px;border-radius:var(--r-pilule);text-decoration:none;box-shadow:0 8px 20px -8px rgba(36,54,184,.6)}
+.pied{font-size:13px;color:var(--texte-3);line-height:1.5;margin:40px 4px 0}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <span class="orbe"></span>
+    <span class="etiquette">Tokn · widgets iPhone · 21/11/2026</span>
+    <h1>Tes widgets, version 2 : ils agissent, ils changent</h1>
+    <p>Les anciens sont morts pour deux raisons. Ils ne faisaient que <b>montrer</b>, toujours la même chose : l'œil s'habitue en une semaine. Et ils parlaient à damienprime sur Vercel, qui <b>ne répond plus depuis le 8 novembre</b>. Ceux-là passent par Tokn sur le cerveau, et chaque geste compte.</p>
+  </header>
+
+  <section>
+    <span class="etiquette">01 · Ce que tu mets sur l'écran</span>
+    <div class="verre carte">
+      <h2>Trois widgets, un seul script « Tokn »</h2>
+      <p>Pas plus : <b>les 4 boutons</b>, <b>le fil</b> avec la proposition du moment, et en option l'ancien widget des espaces. Tout le contenu vient du serveur : je peux changer les textes, les règles et les horaires sans que tu recopies quoi que ce soit.</p>
+      <div class="franc"><b>Le contre-argument que je t'ai donné :</b> empiler des widgets refait le même cycle. D'où le mécanisme anti-oubli de la fin de cette page.</div>
+    </div>
+  </section>
+
+  <section>
+    <span class="etiquette">02 · Les 4 boutons <span class="etat">en ligne</span></span>
+    <div class="verre carte">
+      <h2>Un tap, tu dictes, c'est parti</h2>
+      <p>Widget moyen, paramètre <code>boutons</code>. Le bouton rouvre Scriptable deux secondes : tu dictes, tu relis le texte, <b>Envoyer</b>. Tokn te prévient quand c'est fait.</p>
+      <div class="boutons">
+        <div class="bouton"><b>Sélection</b><span>« Doudounes fines, 200 € max » part dans l'espace Marque. La sélection complète se fait, le lien arrive en push.</span></div>
+        <div class="bouton"><b>Ordre</b><span>N'importe quelle tâche dictée. Tokn ouvre un sujet et s'en occupe, sans que tu ouvres l'app.</span></div>
+        <div class="bouton"><b>Fini</b><span>Termine ta tâche n°1 de damienprime, affichée sur le bouton. Tu confirmes, les XP tombent.</span></div>
+        <div class="bouton"><b>Je bloque</b><span>Quatre raisons (trop gros, flou, ça pèse, pas le moment). Noté dans damienprime, et Claude ouvre un sujet pour te débloquer.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="etiquette">03 · Le fil <span class="etat">en ligne</span></span>
+    <div class="verre carte">
+      <h2>Le haut change avec l'heure de ton téléphone</h2>
+      <p>Widget moyen ou grand, <b>sans paramètre</b>. Pour que ça ne te barbe jamais : quatre contenus par jour, et une règle ou une étape différente chaque jour.</p>
+      <div class="heures">
+        <b>6 h → 10 h</b><div><b>Ce matin</b> : la chose du jour de damienprime, et ce que Claude a fini pendant la nuit.</div>
+        <b>10 h → 17 h</b><div><b>La méthode du jour</b> : une de tes 40 règles validées (contenu, montage, négo, IA). Un tap = « appliquée aujourd'hui », ou « retire cette règle ».</div>
+        <b>17 h → 23 h</b><div><b>IA, reste à faire</b> : une des 13 étapes ouvertes du plan (MagSafe à trancher, audit YouTube Cerveau, formats du 15 décembre…). Un tap ouvre la page.</div>
+        <b>23 h → 6 h</b><div><b>Demain</b> : par quoi la journée commence. Rien d'autre.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="etiquette">04 · Les propositions oui / non <span class="etat">en ligne</span></span>
+    <div class="verre carte">
+      <h2>Claude propose, tu tapes Oui quand tu es partant</h2>
+      <p>En bas du fil : <b>une seule proposition à la fois</b>, dans la couleur de son espace. <b>Oui</b> : le sujet part tout de suite. <b>Non</b> : tu ne la revois jamais. <b>Plus tard</b> : elle revient demain. Sans réponse en 7 jours, elle disparaît.</p>
+      <p>D'où elles viennent : chaque sujet Tokn peut finir sa réponse par une proposition quand il voit une tâche utile, réversible, que tu n'as pas demandée. Les routines aussi. Six t'attendent déjà, par exemple : ranger tes 16 créneaux d'agenda passés, préparer le brief Decathlon, sortir les 3 explosions du Radar.</p>
+      <div class="franc"><b>Rien ne se lance sans ton oui.</b> Et ce qui ne se rattrape pas (envoyer, publier, dépenser) reste une question dans le sujet, même après un oui.</div>
+    </div>
+  </section>
+
+  <section>
+    <span class="etiquette">05 · L'anti-oubli <span class="etat">en ligne</span></span>
+    <div class="verre carte">
+      <h2>Ce que tu ne touches plus disparaît</h2>
+      <div class="spec"><span class="num">A</span><h3>Chaque geste est compté</h3><p>Sélection, ordre, fini, oui, non, méthode appliquée, page ouverte : tout passe par le serveur, qui note le jour.</p></div>
+      <div class="spec"><span class="num">B</span><h3>Le dimanche, un verdict par geste</h3><p>Le KPI du dimanche lit le bilan : <b>garder</b>, <b>à surveiller</b>, <b>à retirer ou changer</b> (zéro tap en 30 jours). Deux dimanches de suite, je te propose de le retirer ou de le changer, jamais d'en empiler un de plus.</p></div>
+      <div class="spec"><span class="num">C</span><h3>Le serveur décide, le script dessine</h3><p>Une règle, un horaire ou un texte qui change ne te demande rien. Un seul installeur, une seule copie, plus d'AirDrop.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <span class="etiquette">06 · Installer <span class="etat toi">3 minutes, une fois</span></span>
+    <div class="verre carte">
+      <h2>Trois gestes, Tailscale allumé</h2>
+      <ol class="etapes">
+        <li>Ouvre la page d'installation ci-dessous et touche <b>Copier le script « Tokn »</b>.</li>
+        <li>Dans <b>Scriptable</b> : ＋, colle, nomme le script exactement <code>Tokn</code>, Terminé. Si tu as déjà un script Tokn, remplace son contenu.</li>
+        <li>Écran d'accueil, appui long → Modifier → Ajouter un widget → Scriptable, <b>moyen</b>, deux fois. Appui long sur chacun → Modifier le widget → Script <code>Tokn</code>, « When Interacting » <b>Open URL</b>, Parameter <code>boutons</code> pour le premier, vide pour le second.</li>
+      </ol>
+      <a class="lien" href="http://100.125.157.100:8791/widget-installer">Ouvrir l'installeur Tokn</a>
+      <p>Plus de mot de passe sur Tokn depuis tes appareils : Tailscale est le verrou. Sans Tailscale, personne n'arrive jusqu'au serveur.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="etiquette">07 · Franchement</span>
+    <div class="verre carte">
+      <h2>Ce qui n'est pas vérifié, ce qui t'attend</h2>
+      <p><b>Pas vérifié</b> : le rendu réel sur ton iPhone et la dictée sur l'appareil. Je n'ai qu'un simulateur (81 tests au vert, dont les gestes : dictée, alertes, envoi, notification). Si un bouton ne fait rien, dis-le moi avec une capture.</p>
+      <p><b>À trancher par toi</b> : damienprime sur Vercel ne répond plus (erreur 402). L'app vivante est celle du cerveau, les widgets passent par elle. Réactiver Vercel ou tout laisser sur le cerveau, c'est de l'argent, donc ta décision.</p>
+    </div>
+  </section>
+
+  <p class="pied">Page écrite par Claude le 21/11/2026 à partir de la conversation « Widgets iPhone damienprime ». Code : Tokn, commit a164661.</p>
+</main>
+</body>
+</html>
